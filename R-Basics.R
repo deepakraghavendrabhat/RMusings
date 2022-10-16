@@ -43,7 +43,10 @@ y <- 20
 print(y) #Prints the value of y
 
 x <- mtcars
+x <- AirPassengers
 print (mtcars) #Prints the mtcars dataset
+print (x)
+print (AirPassengers)
 
 print(paste('hello','students'))  #Paste function
 
@@ -172,7 +175,7 @@ v<3
 price1<-seq(550,670,20)
 names(price1)<-paste0("p",1:7)
 price1
-
+help("names")
 #1. Using index position
 price1[3]
 price1[3:4]
