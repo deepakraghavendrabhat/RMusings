@@ -86,3 +86,25 @@ v1 == 3 #FALSE FALSE  TRUE FALSE FALSE
 v1 <- c(1,2,3,4,5)
 v2 <- c(1,3,4,5,2)
 v1 <= v2 #TRUE  TRUE  TRUE  TRUE FALSE
+
+
+#vector indexing and slicing
+
+v1 = c(1,2,3,5)
+v2 = c('a','b','c','d')
+v1[1]
+v2[3]
+v2[c(1,2)]
+v2[2:4]
+
+names(v2) = c(1,2,3,4)
+v2[1]
+v2[c(2,3,4)]
+
+
+v2[v1 > 3]
+
+my.filter <- v1 > 2
+v2[my.filter]
+
+help("vector")
