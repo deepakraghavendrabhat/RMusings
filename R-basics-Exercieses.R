@@ -37,3 +37,46 @@ stock.prices[stock.prices > 23]
 stock.prices[stock.prices == max(stock.prices)]
 #Fri: 
 
+
+
+#1
+?datasets
+library(help = "datasets")
+?sleep
+View(sleep)
+
+sleep$group
+summary(sleep)
+nrow(sleep)
+ncol(sleep)
+
+#2
+
+subset(sleep)
+sleep$ID[sleep$extra > 0]
+
+
+sleep$ID[sleep$extra > 0 && sleep$group == 1]
+
+
+A_upvotes <- c(7, 3, 2, 8, 0, 4)
+if(mean(A_upvotes) >= 4)
+{
+  print("Congratulations, you won the Popular Badge")
+} else if (mean(A_upvotes) >= 3)
+{
+  print("You are quite close to winning a Badge. Keep working hard.")
+}
+
+
+A_upvotes <- c(7, 3, 2, 8, 0, 4)
+if(mean(A_upvotes) >= 8)
+{
+  print("Congratulations, you won the Superstar Badge")
+} else if(mean(A_upvotes) >= 4)
+{
+  print("Congratulations, you won the Popular Badge")
+} else 
+{
+  print("You are quite close to winning a Badge. Keep working hard.")
+}
